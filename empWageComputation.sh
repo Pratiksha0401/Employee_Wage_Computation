@@ -3,6 +3,7 @@ echo "Welcome to Employee Wage Computation Program on Master Branch"
 isFullTime=1
 isPartTime=2
 wagePerHr=20
+
 empCheck=$((RANDOM%3))
 
 case $empCheck in
