@@ -10,14 +10,14 @@ randomNum=$((RANDOM%3))
 if [ $randomNum -eq $isFullTime ]
 then
    echo "Employee Present Full Time"
-	salary=$(($wagePerHr * $fullTimeHr))
-	echo "Salary = $salary"
+   salary=$(($wagePerHr * $fullTimeHr))
+   echo "Salary = $salary"
 elif [ $randomNum -eq $isPartTime ]
 then
-	echo "Employee Present for Part time"
+   echo "Employee Present for Part time"
    salary=$(($wagePerHr * $partTimeHr))
    echo "Salary = $salary"
 else
    echo " Employee Absent"
-	echo "Salary = $salary"
+   echo "Salary = $salary"
 fi
