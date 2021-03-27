@@ -3,7 +3,7 @@ echo "Welcome to Employee Wage Computation Program on Master Branch"
 isFullTime=1
 isPartTime=2
 wagePerHr=20
-
+daysInMonth=20
 empCheck=$((RANDOM%3))
 
 case $empCheck in
@@ -18,6 +18,6 @@ case $empCheck in
         ;;
 esac
 
-salary=$(($empHr*$wagePerHr))
+salary=$(($empHr*$wagePerHr*$daysInMonth))
 echo $salary
 
